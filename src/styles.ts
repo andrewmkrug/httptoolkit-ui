@@ -39,7 +39,7 @@ export const lightTheme = {
     highlightBackground: '#ffffff',
     highlightColor: '#222',
 
-    popColor: '#e1421f',
+    popColor: '#662d91',
 
     warningColor,
     warningBackground: '#f1971f40',
@@ -84,7 +84,7 @@ export const darkTheme = {
     highlightBackground: '#111111',
     highlightColor: '#efefef',
 
-    popColor: '#e1421f',
+    popColor: '#662d91',
 
     warningColor,
     warningBackground: '#f1971f40',
@@ -140,7 +140,7 @@ export const highContrastTheme = {
     highlightBackground: '#ffffff',
     highlightColor: '#000',
 
-    popColor: '#e1421f',
+    popColor: '#662d91',
 
     warningColor,
     warningBackground: '#f1971f40',

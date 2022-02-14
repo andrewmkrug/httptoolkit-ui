@@ -142,14 +142,6 @@ class App extends React.Component<{ accountStore: AccountStore }> {
         : []),
 
       {
-        name: "Get Pro",
-        title: "Sign up for HTTP Toolkit Pro",
-        icon: ["far", "star"],
-        position: "bottom",
-        type: "callback",
-        onClick: () => this.props.accountStore.getPro("sidebar"),
-      },
-      {
         name: "Give feedback",
         title: "Suggest features or report issues",
         icon: ["far", "comment"],
