@@ -27,7 +27,7 @@ import {
 import { Pill } from "../common/pill";
 import { CollapsibleSection } from "../common/collapsible-section";
 import { ContentLabelBlock, Markdown } from "../common/text-content";
-import {  CardSalesPitch } from "../account/pro-placeholders";
+import { CardSalesPitch } from "../account/pro-placeholders";
 
 interface ExchangePerformanceCardProps
   extends Omit<ExchangeCardProps, "children"> {
@@ -77,20 +77,10 @@ export const ExchangePerformanceCard = inject("accountStore")(
           </CollapsibleCardHeading>
         </header>
 
-        {isPaidUser ? (
-          <div>
-            <CompressionPerformance exchange={exchange} />
-            <CachingPerformance exchange={exchange} />
-          </div>
-        ) : (
-          <CardSalesPitch source="performance">
-            <p>
-              See timing info, dive into the real and potential compression of
-              every exchange, and understand how &amp; where this response could
-              be cached, for a full performance overview.
-            </p>
-          </CardSalesPitch>
-        )}
+        <div>
+          <CompressionPerformance exchange={exchange} />
+          <CachingPerformance exchange={exchange} />
+        </div>
       </ExchangeCard>
     );
   })
